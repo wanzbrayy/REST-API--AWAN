@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME API</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body, html {
+            height: 100%;
+            background: linear-gradient(135deg, #6e7dff, #8f94fb);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+            width: 100%;
+        }
+
+        /* Header with Sign-In / Sign-Up links */
+        .header {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 10;
+        }
+
+        .header a {
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            margin: 0 10px;
+            padding: 10px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .header a:hover {
+            border-color: white;
+            color: #6e7dff;
+            background-color: white;
+        }
+
+        /* Typing text animation */
+        .typing-text {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-top: 100px;
+            display: inline-block;
+            white-space: nowrap;
+            border-right: 2px solid #fff;
+            animation: typing 3.5s steps(30) 1s forwards, blink 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .typing-text {
+                font-size: 2rem;
+                margin-top: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header with Sign-In / Sign-Up links in the top right corner -->
+        <div class="header">
+            <a href="sign-up.html">Sign Up</a>
+            <a href="login.html">Sign In</a>
+        </div>
+
+        <!-- Typing text animation in the center -->
+        <div class="typing-text">
+            welcome to rest api wanzofc
+        </div>
+    </div>
+</body>
+</html>

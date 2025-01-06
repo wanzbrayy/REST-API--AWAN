@@ -2,9 +2,9 @@
   "name": "yt-downloader-app",
   "version": "1.0.0",
   "description": "A simple app for downloading YouTube videos and audio.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node app.js"
   },
   "dependencies": {
     "dotenv": "^16.0.0",
@@ -14,6 +14,6 @@
     "jsonwebtoken": "^8.5.1",
     "yt-downloader": "^1.0.0"
   },
-  "author": "",
+  "author": "wanzofc",
   "license": "ISC"
 }
